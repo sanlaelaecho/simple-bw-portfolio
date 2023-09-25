@@ -1,0 +1,45 @@
+.menuContainer,
+.menuOptions {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menuContainer {
+  /* margin-left: 20vmin;
+  margin-right: 25vmin; */
+  margin-top: 7.25vmin;
+  padding: 5vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 94%; */
+  height: 89vmin;
+  background-color: rgba(207, 211, 209, .5);
+  color: black;
+  font-size: 5vmin;
+}
+
+.about {
+  margin-top: 0;
+  color: var(--dark-grey);
+  transform: scale(1);
+}
+
+.menuOptions {
+  line-height: 1.4;
+}
+
+.about:hover,
+.menuOptions li:hover {
+  cursor: pointer;
+  color: var(--light-grey);
+  transform: scale(.7);
+}
+
+a {
+  color: var(--med-grey);
+}
+
+a:hover {
+  color: var(--light-grey);
+}
