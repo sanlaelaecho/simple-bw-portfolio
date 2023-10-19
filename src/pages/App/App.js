@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useNavigate, Navigate } from 'react-router-dom'
 import HomePage from '../Home/Home'
 import ProjectsPage from '../Projects/Projects'
 import AboutPage from '../About/About'
@@ -17,6 +17,7 @@ export default function App() {
             <Route path='/resume' openResume={openResume}/>
             <Route path='/projects' element={<ProjectsPage />} />
             <Route path='/contact' element={<ContactPage />} />
+            <Route path='/*' element={<Navigate to='/home' />} />
         </Routes>
 )
 }
